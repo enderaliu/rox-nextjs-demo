@@ -1,36 +1,93 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🧪 Rox Next.js Demo — E2E Testing with Playwright
 
-## Getting Started
+This is a sample **Next.js 14** application demonstrating **decoupled end-to-end testing** using **Playwright** and **TypeScript**.
 
-First, run the development server:
+It showcases a minimal setup where the **app logic (pages/components)** is separated from the **test logic**, following best practices like the **Page Object Model (POM)**.
+
+---
+
+## ⚙️ Tech Stack
+
+- [Next.js](https://nextjs.org)
+- [Playwright](https://playwright.dev)
+- TypeScript
+- Dotenv (for environment variables)
+- Page Object Model (POM) structure
+
+---
+
+## 📁 Project Structure
+
+```
+rox-nextjs-demo/
+├── public/
+├── src/
+│   └── app/
+│       └── page.tsx           # Main Next.js page
+├── tests/
+│   └── home.spec.ts           # Playwright test
+├── .env                       # Environment variables
+├── README.md
+├── package.json
+├── next.config.ts
+├── tsconfig.json
+```
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/enderaliu/rox-nextjs-demo.git
+cd rox-nextjs-demo
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+> Note: This will install both Next.js and Playwright-related dependencies.
+
+### 3. Install Playwright browsers
+
+```bash
+npx playwright install
+```
+
+---
+
+## 🧪 Run the Project
+
+### Start the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Run E2E tests with Playwright
 
-## Learn More
+```bash
+npm run test:e2e
+```
 
-To learn more about Next.js, take a look at the following resources:
+> This will run all tests located in the `tests/` directory.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📦 Scripts
 
-## Deploy on Vercel
+| Script              | Description                      |
+|---------------------|----------------------------------|
+| `npm run dev`       | Starts the Next.js dev server    |
+| `npm run test:e2e`  | Runs Playwright end-to-end tests |
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
