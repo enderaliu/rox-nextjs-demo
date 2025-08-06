@@ -1,5 +1,19 @@
 # 🚀 Rox Next.js + Playwright Demo
 
+## GitHub Actions
+
+![Run Playwright Tests](https://github.com/enderaliu/rox-nextjs-demo/actions/workflows/playwright.yml/badge.svg)
+[View Workflow](https://github.com/enderaliu/rox-nextjs-demo/actions/workflows/playwright.yml/)
+
+## End-to-End Testing with GitHub Actions
+
+This project runs Playwright end-to-end tests automatically via [GitHub Actions](https://github.com/enderaliu/rox-nextjs-demo/actions).
+
+Tests run on:
+- Every push to the `main` branch
+- Every pull request targeting `main`
+
+
 This is a demo project showcasing how to use **Next.js (App Router)** with **Playwright** to test:
 - UI rendering
 - Async API calls
