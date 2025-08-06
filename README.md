@@ -101,6 +101,6 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 npm run test:e2e
 ```
 
-This runs all tests in the `tests/` folder.
+This runs all tests in the `tests/` folder. 
 
 ---
